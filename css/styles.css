@@ -10,6 +10,7 @@
   --cornflower-cl: 231, 233, 252, 1;
   --light-slate-cl: 142, 143, 153, 1;
   --grey-cl: 46, 47, 66;
+  --green-cl: 49, 208, 170, 1;
 
   /* Others */
   --items: 4;
@@ -158,7 +159,8 @@ footer {
   color: rgba(var(--navy-blue-cl));
 
   transition: var(--anim-fast);
-  transition-property: opacity, transform;
+  /* transition-property: opacity, transform; */
+  transition-property: color;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -190,12 +192,14 @@ footer {
 .address-link {
   display: inline;
   align-items: center;
+  transition: var(--anim-fast);
+  transition-property: color;
 }
 .hero .container {
   display: block;
   align-items: center;
   padding: 188px 0;
-  max-height: 1440px;
+  max-width: 1440px;
   background-color: rgba(var(--navy-blue-cl));
   background-image: linear-gradient(
       rgba(var(--grey-cl), 0.7),
@@ -319,6 +323,9 @@ footer {
   justify-content: center;
   gap: 24px;
 }
+.footer-socials {
+  gap: 16px;
+}
 .socials-link {
   display: flex;
   align-items: center;
@@ -329,6 +336,9 @@ footer {
   border-radius: 50%;
   border: 1px solid rgba(var(--iris-cl));
   background-color: rgba(var(--iris-cl));
+
+  transition: var(--anim-fast);
+  transition-property: background-color;
 }
 .socials-link:hover,
 .socials-link:focus {
@@ -340,6 +350,10 @@ footer {
 .portfolio-list {
   --items: 3;
   row-gap: 48px;
+}
+.portfolio-item {
+  transition: var(--anim-fast);
+  transition-property: box-shadow;
 }
 .portfolio-wrapper {
   position: relative;
@@ -365,8 +379,6 @@ footer {
   box-shadow: 0px 1px 6px rgba(var(--grey-cl), 0.08),
     0px 1px 1px rgba(var(--grey-cl), 0.16),
     0px 2px 1px rgba(var(--grey-cl), 0.08);
-  transition: var(--anim-fast);
-  transition-property: box-shadow;
 }
 .portfolio-item:hover .overlay {
   transform: translateY(0%);
@@ -396,4 +408,8 @@ footer {
   font-weight: 500;
   color: rgba(var(--white-cl));
   margin-bottom: 16px;
+}
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: rgba(var(--green-cl));
 }
