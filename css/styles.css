@@ -156,7 +156,7 @@ footer {
   padding: 24px 0;
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: rgba(var(--navy-blue-cl));
+  color: rgba(var(--ocean-cl));
 
   transition: var(--anim-fast);
   transition-property: color;
@@ -169,7 +169,6 @@ footer {
 .nav-link:active {
   font-weight: 500;
   color: rgba(var(--ocean-cl));
-  /* text-decoration: underline rgba(var(--ocean-cl)) 4px; */
 }
 .nav-link.active::after {
   content: "";
@@ -208,11 +207,6 @@ footer {
   background-position: center;
   margin: 0 auto;
 }
-/* .hero .container {
-  display: block;
-  align-items: center;
-  max-width: 1440px;
-} */
 .hero-title {
   max-width: 496px;
   font-weight: 700;
